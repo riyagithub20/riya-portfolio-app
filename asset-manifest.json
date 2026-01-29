@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/riya-portfolio-app/static/css/main.ab01dadb.css",
-    "main.js": "/riya-portfolio-app/static/js/main.15c25cef.js",
+    "main.css": "/riya-portfolio-app/static/css/main.03d74990.css",
+    "main.js": "/riya-portfolio-app/static/js/main.fa34f24b.js",
     "static/media/jobsineducation.jpg": "/riya-portfolio-app/static/media/jobsineducation.c603b3e675b2e5dbd26c.jpg",
     "static/media/riya.jpg": "/riya-portfolio-app/static/media/riya.fc0ad0a89ebbec8f845c.jpg",
     "static/media/logistifie-passenger.jpg": "/riya-portfolio-app/static/media/logistifie-passenger.2fa5482096d3c7fc1029.jpg",
     "static/media/logistifie-driver.jpg": "/riya-portfolio-app/static/media/logistifie-driver.dfc61f317c1533fa911d.jpg",
     "index.html": "/riya-portfolio-app/index.html",
-    "main.ab01dadb.css.map": "/riya-portfolio-app/static/css/main.ab01dadb.css.map",
-    "main.15c25cef.js.map": "/riya-portfolio-app/static/js/main.15c25cef.js.map"
+    "main.03d74990.css.map": "/riya-portfolio-app/static/css/main.03d74990.css.map",
+    "main.fa34f24b.js.map": "/riya-portfolio-app/static/js/main.fa34f24b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab01dadb.css",
-    "static/js/main.15c25cef.js"
+    "static/css/main.03d74990.css",
+    "static/js/main.fa34f24b.js"
   ]
 }
