@@ -19,16 +19,25 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className={styles.hero}>
-      <div className="container">
+    <section 
+      id="home" 
+      className={styles.hero}
+      style={{
+        marginTop: '0',
+        paddingTop: '0',
+        position: 'relative'
+      }}
+    >
+      <div className="container" style={{ paddingTop: '120px', paddingBottom: '60px' }}>
         <div className={styles.heroContent}>
           <motion.div 
             className={styles.heroText}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            style={{ marginTop: '0' }}
           >
-            <h1 className={styles.heroTitle}>
+            <h1 className={styles.heroTitle} style={{ marginTop: '0' }}>
               Hi, I'm <span className={styles.heroHighlight}>Riya Mandal</span>
             </h1>
             <h2 className={styles.heroSubtitle}>

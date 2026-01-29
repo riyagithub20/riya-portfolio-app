@@ -145,3 +145,20 @@
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
 }
+
+/* Fix for fixed header spacing */
+html {
+  scroll-padding-top: 80px; /* Adjust based on your header height */
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    scroll-padding-top: 60px;
+  }
+}

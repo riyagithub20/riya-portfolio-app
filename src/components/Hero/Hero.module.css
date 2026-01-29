@@ -1,13 +1,16 @@
+/* RESET - Clear all previous styles and start fresh */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 100px 0 60px;
+  padding: 0;
+  margin: 0;
   background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
   position: relative;
   overflow: hidden;
 }
 
+/* Ensure content starts below fixed header */
 .hero::before {
   content: '';
   position: absolute;
@@ -22,6 +25,9 @@
 .container {
   position: relative;
   z-index: 1;
+  width: 100%;
+  padding: 120px 20px 60px; /* Top padding accounts for fixed header */
+  margin: 0 auto;
 }
 
 .heroContent {
@@ -29,6 +35,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .heroText {
@@ -39,7 +47,7 @@
   font-size: 3.5rem;
   font-weight: 800;
   line-height: 1.1;
-  margin-bottom: 1.25rem;
+  margin: 0 0 1.25rem 0;
   color: var(--dark-color);
 }
 
@@ -64,14 +72,14 @@
 .heroSubtitle {
   font-size: 1.5rem;
   color: var(--gray-dark);
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem 0;
   font-weight: 500;
 }
 
 .heroDescription {
   font-size: 1.125rem;
   color: var(--gray-medium);
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
   line-height: 1.6;
 }
 
@@ -79,7 +87,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
-  margin-bottom: 2.5rem;
+  margin: 0 0 2.5rem 0;
   padding: 1.75rem;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
@@ -111,7 +119,7 @@
 .heroButtons {
   display: flex;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin: 0 0 3rem 0;
   flex-wrap: wrap;
 }
 
@@ -276,8 +284,14 @@
   }
 }
 
-/* Responsive Design */
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Large screens */
 @media (max-width: 1200px) {
+  .container {
+    padding: 110px 20px 50px;
+  }
+  
   .heroContent {
     gap: 3rem;
   }
@@ -292,9 +306,10 @@
   }
 }
 
+/* Tablets */
 @media (max-width: 992px) {
-  .hero {
-    padding: 90px 0 50px;
+  .container {
+    padding: 100px 20px 40px;
   }
   
   .heroContent {
@@ -337,11 +352,14 @@
   }
 }
 
-/* Mobile Styles - FIXED SPACING */
+/* Mobile - CRITICAL FIX */
 @media (max-width: 768px) {
   .hero {
-    padding: 80px 0 40px;
     min-height: auto;
+  }
+  
+  .container {
+    padding: 90px 20px 30px !important; /* Force higher priority */
   }
   
   .heroContent {
@@ -416,9 +434,10 @@
   }
 }
 
+/* Small Mobile */
 @media (max-width: 480px) {
-  .hero {
-    padding: 70px 0 30px;
+  .container {
+    padding: 80px 15px 20px !important;
   }
   
   .heroTitle {
@@ -462,10 +481,10 @@
   }
 }
 
-/* Small Mobile Devices */
+/* Extra Small Mobile */
 @media (max-width: 360px) {
-  .hero {
-    padding: 60px 0 20px;
+  .container {
+    padding: 70px 15px 15px !important;
   }
   
   .heroTitle {
