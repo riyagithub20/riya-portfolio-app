@@ -64,7 +64,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="#contact"
-                className="btn btn-primary"
+                className={`btn ${styles.primaryBtn}`}
               >
                 Get In Touch
               </motion.a>
@@ -72,7 +72,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="#projects"
-                className="btn btn-outline"
+                className={`btn ${styles.outlineBtn}`}
               >
                 View Projects
               </motion.a>
